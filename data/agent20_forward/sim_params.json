@@ -1,0 +1,55 @@
+{
+  "master_rng_seed": 20,
+  "data_path": "/home/masud/Closed_Navigation_Modell_DQN/data/agent20_forward",
+  "fixed_trial_time": true,
+  "explore": {
+    "num_of_explore_phases": 1.0,
+    "trials_per_explore": 10.0,
+    "max_tr_dur": 1500.0
+  },
+  "rest": {
+    "num_of_rest_phases": 8.0,
+    "trials_per_rest": 1.0,
+    "max_tr_dur": 3000.0
+  },
+  "trial_params": {
+    "type": [
+      "explore",
+      "rest"
+    ],
+    "goal_shape": [
+      "round",
+      "round"
+    ],
+    "goal_size1": [
+      0.2,
+      0.2
+    ],
+    "goal_size2": [
+      0.2,
+      0.2
+    ],
+    "goal_x": [
+      0.5,
+      0.5
+    ],
+    "goal_y": [
+      0.5,
+      0.5
+    ],
+    "start_x": [
+      -0.8,
+      60.0
+    ],
+    "start_y": [
+      -0.8,
+      60.0
+    ],
+    "max_tr_dur": [
+      1500.0,
+      3000.0
+    ]
+  },
+  "simtime": 144000.0,
+  "max_num_trs": 88
+}

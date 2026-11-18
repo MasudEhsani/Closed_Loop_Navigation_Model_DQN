@@ -1,0 +1,43 @@
+{
+  "network": {
+    "conv1_channels": 8,
+    "conv1_kernel": 5,
+    "conv2_channels": 16,
+    "conv2_kernel": 3,
+    "pool": 8,
+    "hidden": 64
+  },
+  "learning": {
+    "gamma": 0.95,
+    "lr": 0.001,
+    "huber_delta": 1.0,
+    "grad_clip": 10.0,
+    "goal_reward": 1.0,
+    "step_cost": 0.0,
+    "double_dqn": true
+  },
+  "online": {
+    "sampling": "recent",
+    "window": 20,
+    "batch": 32,
+    "updates_per_step": 1,
+    "target_sync_steps": 25,
+    "clear_window_each_trial": true,
+    "learn_after_goal": true
+  },
+  "exploration": {
+    "eps_start": 1.0,
+    "eps_end": 0.1,
+    "eps_decay_per_trial": 0.97,
+    "random_forward_prob": 0.75
+  },
+  "rest": {
+    "replay_mode": "reverse",
+    "updates_per_step": 4,
+    "batch": 8,
+    "target_sync_updates": 1,
+    "rewarded_only": false,
+    "episode_order": "recent_first",
+    "zero_rewards_control": false
+  }
+}

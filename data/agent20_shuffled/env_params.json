@@ -1,0 +1,61 @@
+{
+  "arena": {
+    "xmin": -1.2,
+    "xmax": 1.2,
+    "ymin": -1.2,
+    "ymax": 1.2
+  },
+  "cell_size": 0.1,
+  "step_ms": 20.0,
+  "initial_heading": "N",
+  "turn_moves": true,
+  "walls": {
+    "north": {
+      "color": [
+        0.85,
+        0.2,
+        0.2
+      ],
+      "pattern": "stripes",
+      "period": 0.4
+    },
+    "east": {
+      "color": [
+        0.2,
+        0.7,
+        0.25
+      ],
+      "pattern": "block",
+      "centers": [
+        0.5
+      ],
+      "width": 0.3
+    },
+    "south": {
+      "color": [
+        0.2,
+        0.3,
+        0.85
+      ],
+      "pattern": "plain"
+    },
+    "west": {
+      "color": [
+        0.9,
+        0.8,
+        0.2
+      ],
+      "pattern": "dots",
+      "centers": [
+        0.3,
+        0.7
+      ],
+      "width": 0.12
+    }
+  },
+  "vision": {
+    "fov_deg": 90.0,
+    "columns_per_view": 32,
+    "max_distance": 3.4
+  }
+}
